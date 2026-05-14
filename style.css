@@ -130,7 +130,11 @@ border-radius: 50px;
 font-size: 0.8rem;
 font-weight: 500;
 }
-.hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+.hero-actions { 
+    display: flex; 
+    gap: 1rem; 
+    flex-wrap: wrap;
+ }
 .btn-primary {
 background: var(--ink);
 color: #fff;
@@ -155,6 +159,31 @@ border: 2px solid var(--border);
 transition: all 0.2s;
 }
 .btn-outline:hover { border-color: var(--ink); }
+
+/* CV Download Button */
+.btn-cv {
+
+  padding: 0.85rem 2rem;
+  background: var(--ink);
+  color: #fff;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: all 0.2s;
+  border: 2px solid var(--ink);
+}
+
+
+.btn-cv:hover {
+  background: var(--accent);
+   border-color: var(--accent); 
+}
+
+.btn-cv:hover svg {
+  transform: translateY(2px);
+}
+
 
 .hero-visual {
 display: flex;
@@ -468,7 +497,7 @@ align-self: flex-start;
 }
 .form-submit:hover { background: var(--accent); }
 
-#instagram-icon {
+instagram-icon {
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
